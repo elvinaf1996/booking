@@ -60,6 +60,10 @@ public class HomePage {
         for(int i = 1; i < countRooms; i++){
             $(PLUS_ROOM).click();
         }
+        return this;
+    }
+
+    public HomePage search(){
         $(CHECK_PRICE).click();
         return this;
     }

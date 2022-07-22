@@ -47,7 +47,7 @@ public class SearchPage {
     }
 
     public SearchPage countOfNightCheck(int countOfNight){
-        $$(COLUMN_NAME).last().shouldHave(text(String.format("%s ночей", "6")));
+        $$(COLUMN_NAME).last().shouldHave(text(String.format("%s ночей", Integer.toString(countOfNight))));
         return this;
     }
 
